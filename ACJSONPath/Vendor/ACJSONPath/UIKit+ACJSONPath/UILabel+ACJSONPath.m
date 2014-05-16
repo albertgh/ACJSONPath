@@ -14,8 +14,12 @@
 
 - (void)ac_setTextWithJSON:(NSDictionary *)dict andPath:(NSString *)path
 {
-    self.text = [[ACJSONPath sharedInstance] getDataFromJSONObject:dict
+    NSData *data = [[ACJSONPath sharedInstance] getDataFromJSONObject:dict
                                                                byPath:path];
+    if ([data isKindOfClass:[NSString class]])
+    {
+        self.text = (NSString *)data;
+    }
 }
 
 @end
