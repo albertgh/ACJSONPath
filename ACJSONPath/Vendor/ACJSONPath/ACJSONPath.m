@@ -31,74 +31,81 @@
     
     for (NSString *key in keys)
     {
-        //NSRange range1 = [key rangeOfString:@"["];
-        //NSRange range2 = [key rangeOfString:@"]"];
-        
-        // key 开头且需要从数组下标取元素的分支
-        if (
-            [key hasSuffix:@"]"]
-            //range1.location != NSNotFound
-            //&& range2.location != NSNotFound
-            )
+        if (key.length > 0)
         {
-            NSArray *keyAndArrayIndexArray = [key componentsSeparatedByString:@"["];
-            //DLog(@"%lu", (unsigned long)[keyAndArrayIndexArray count]);
+            //NSRange range1 = [key rangeOfString:@"["];
+            //NSRange range2 = [key rangeOfString:@"]"];
             
-            NSString *keyForArrayObj = keyAndArrayIndexArray[0];
-            
-            // 顶层数组对象
-            NSArray *arrayObj = (NSArray *)((NSDictionary *)container[keyForArrayObj]);
-            
-            // 处理多级数组
-            /** 数组层数 (从1开始) */
-            for (NSInteger i = 1; i < [keyAndArrayIndexArray count]; i++)
+            // key 开头且需要从数组下标取元素的分支
+            if (
+                [key hasSuffix:@"]"]
+                //range1.location != NSNotFound
+                //&& range2.location != NSNotFound
+                )
             {
-                NSString *indexString = keyAndArrayIndexArray[i];
-                NSInteger indexForContainer =
-                [(NSString *)[indexString substringToIndex:(indexString.length - 1)] integerValue];
+                NSArray *keyAndArrayIndexArray = [key componentsSeparatedByString:@"["];
+                //DLog(@"%lu", (unsigned long)[keyAndArrayIndexArray count]);
                 
-                id element;
+                NSString *keyForArrayObj = keyAndArrayIndexArray[0];
                 
-                // 判断数组下标是否越界
-                if (
-                    indexForContainer >= 0
-                    && indexForContainer < [arrayObj count]
-                    )
-                {
-                    element = arrayObj[indexForContainer];
-                }
-                else
-                {
-                    // 下标越界
-                    return nil;
-                }
+                // 顶层数组对象
+                NSArray *arrayObj = (NSArray *)((NSDictionary *)container[keyForArrayObj]);
                 
-                // 判断是否最后一层，是则赋给中间容器
-                if ( i == ([keyAndArrayIndexArray count] - 1) )
+                // 处理多级数组
+                /** 数组层数 (从1开始) */
+                for (NSInteger i = 1; i < [keyAndArrayIndexArray count]; i++)
                 {
-                    container = element;
-                }
-                else
-                {
-                    // 如果不是最后一层，则判断该元素如果是数组对象才可以进入下一次循环继续循环取下标元素
-                    if ([element isKindOfClass:[NSArray class]])
+                    NSString *indexString = keyAndArrayIndexArray[i];
+                    NSInteger indexForContainer =
+                    [(NSString *)[indexString substringToIndex:(indexString.length - 1)] integerValue];
+                    
+                    id element;
+                    
+                    // 判断数组下标是否越界
+                    if (
+                        indexForContainer >= 0
+                        && indexForContainer < [arrayObj count]
+                        )
                     {
-                        // 替换为新数组
-                        arrayObj = element;
+                        element = arrayObj[indexForContainer];
                     }
                     else
                     {
-                        // 不存在的数组
+                        // 下标越界
                         return nil;
+                    }
+                    
+                    // 判断是否最后一层，是则赋给中间容器
+                    if ( i == ([keyAndArrayIndexArray count] - 1) )
+                    {
+                        container = element;
+                    }
+                    else
+                    {
+                        // 如果不是最后一层，则判断该元素如果是数组对象才可以进入下一次循环继续循环取下标元素
+                        if ([element isKindOfClass:[NSArray class]])
+                        {
+                            // 替换为新数组
+                            arrayObj = element;
+                        }
+                        else
+                        {
+                            // 不存在的数组
+                            return nil;
+                        }
                     }
                 }
             }
+            // 只有 key, 不需要从数组下标取元素的分支
+            else
+            {
+                container = container[key];
+            }
         }
-        
-        // 只有 key, 不需要从数组下标取元素的分支
         else
         {
-            container = container[key];
+            // wrong path
+            return nil;
         }
     }
     return container;
