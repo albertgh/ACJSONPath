@@ -14,27 +14,12 @@
 		5018A183192498F000B12E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A182192498F000B12E7A /* main.m */; };
 		5018A187192498F000B12E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A186192498F000B12E7A /* AppDelegate.m */; };
 		5018A189192498F000B12E7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5018A188192498F000B12E7A /* Images.xcassets */; };
-		5018A190192498F000B12E7A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5018A18F192498F000B12E7A /* XCTest.framework */; };
-		5018A191192498F000B12E7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5018A176192498F000B12E7A /* Foundation.framework */; };
-		5018A192192498F000B12E7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5018A17A192498F000B12E7A /* UIKit.framework */; };
-		5018A19A192498F000B12E7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5018A198192498F000B12E7A /* InfoPlist.strings */; };
-		5018A19C192498F000B12E7A /* ACJSONPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A19B192498F000B12E7A /* ACJSONPathTests.m */; };
 		5018A1AC1924996200B12E7A /* ACJSONPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A1A81924996200B12E7A /* ACJSONPath.m */; };
 		5018A1AD1924996200B12E7A /* ACJSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A1AB1924996200B12E7A /* ACJSONUtil.m */; };
 		5018A1B0192499AB00B12E7A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A1AF192499AB00B12E7A /* RootViewController.m */; };
 		5018A1B219249ADC00B12E7A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 5018A1B119249ADC00B12E7A /* test.json */; };
-		5018A1B61924AA0800B12E7A /* UILabel+ACJSONPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A1B51924AA0800B12E7A /* UILabel+ACJSONPath.m */; };
+		7A0AF8A21D80A1610067D6D1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AF8A11D80A1610067D6D1 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5018A193192498F000B12E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5018A16B192498F000B12E7A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5018A172192498F000B12E7A;
-			remoteInfo = ACJSONPath;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5018A173192498F000B12E7A /* ACJSONPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACJSONPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +33,7 @@
 		5018A185192498F000B12E7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5018A186192498F000B12E7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5018A188192498F000B12E7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5018A18E192498F000B12E7A /* ACJSONPathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACJSONPathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5018A18F192498F000B12E7A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5018A197192498F000B12E7A /* ACJSONPathTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ACJSONPathTests-Info.plist"; sourceTree = "<group>"; };
-		5018A199192498F000B12E7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5018A19B192498F000B12E7A /* ACJSONPathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACJSONPathTests.m; sourceTree = "<group>"; };
 		5018A1A71924996200B12E7A /* ACJSONPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACJSONPath.h; sourceTree = "<group>"; };
 		5018A1A81924996200B12E7A /* ACJSONPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACJSONPath.m; sourceTree = "<group>"; };
 		5018A1AA1924996200B12E7A /* ACJSONUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACJSONUtil.h; sourceTree = "<group>"; };
@@ -60,8 +41,7 @@
 		5018A1AE192499AB00B12E7A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		5018A1AF192499AB00B12E7A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		5018A1B119249ADC00B12E7A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
-		5018A1B41924AA0800B12E7A /* UILabel+ACJSONPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ACJSONPath.h"; sourceTree = "<group>"; };
-		5018A1B51924AA0800B12E7A /* UILabel+ACJSONPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ACJSONPath.m"; sourceTree = "<group>"; };
+		7A0AF8A11D80A1610067D6D1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,16 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5018A18B192498F000B12E7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5018A190192498F000B12E7A /* XCTest.framework in Frameworks */,
-				5018A192192498F000B12E7A /* UIKit.framework in Frameworks */,
-				5018A191192498F000B12E7A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				5018A17C192498F000B12E7A /* ACJSONPath */,
-				5018A195192498F000B12E7A /* ACJSONPathTests */,
 				5018A175192498F000B12E7A /* Frameworks */,
 				5018A174192498F000B12E7A /* Products */,
 			);
@@ -102,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				5018A173192498F000B12E7A /* ACJSONPath.app */,
-				5018A18E192498F000B12E7A /* ACJSONPathTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +96,7 @@
 				5018A1B119249ADC00B12E7A /* test.json */,
 				5018A1A51924996200B12E7A /* Vendor */,
 				5018A188192498F000B12E7A /* Images.xcassets */,
+				7A0AF8A11D80A1610067D6D1 /* Launch Screen.storyboard */,
 				5018A17D192498F000B12E7A /* Supporting Files */,
 			);
 			path = ACJSONPath;
@@ -144,24 +113,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5018A195192498F000B12E7A /* ACJSONPathTests */ = {
-			isa = PBXGroup;
-			children = (
-				5018A19B192498F000B12E7A /* ACJSONPathTests.m */,
-				5018A196192498F000B12E7A /* Supporting Files */,
-			);
-			path = ACJSONPathTests;
-			sourceTree = "<group>";
-		};
-		5018A196192498F000B12E7A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5018A197192498F000B12E7A /* ACJSONPathTests-Info.plist */,
-				5018A198192498F000B12E7A /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		5018A1A51924996200B12E7A /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +125,6 @@
 		5018A1A61924996200B12E7A /* ACJSONPath */ = {
 			isa = PBXGroup;
 			children = (
-				5018A1B31924A9D900B12E7A /* UIKit+ACJSONPath */,
 				5018A1A71924996200B12E7A /* ACJSONPath.h */,
 				5018A1A81924996200B12E7A /* ACJSONPath.m */,
 			);
@@ -188,15 +138,6 @@
 				5018A1AB1924996200B12E7A /* ACJSONUtil.m */,
 			);
 			path = ACJSONUtil;
-			sourceTree = "<group>";
-		};
-		5018A1B31924A9D900B12E7A /* UIKit+ACJSONPath */ = {
-			isa = PBXGroup;
-			children = (
-				5018A1B41924AA0800B12E7A /* UILabel+ACJSONPath.h */,
-				5018A1B51924AA0800B12E7A /* UILabel+ACJSONPath.m */,
-			);
-			path = "UIKit+ACJSONPath";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,37 +160,14 @@
 			productReference = 5018A173192498F000B12E7A /* ACJSONPath.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5018A18D192498F000B12E7A /* ACJSONPathTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5018A1A2192498F000B12E7A /* Build configuration list for PBXNativeTarget "ACJSONPathTests" */;
-			buildPhases = (
-				5018A18A192498F000B12E7A /* Sources */,
-				5018A18B192498F000B12E7A /* Frameworks */,
-				5018A18C192498F000B12E7A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5018A194192498F000B12E7A /* PBXTargetDependency */,
-			);
-			name = ACJSONPathTests;
-			productName = ACJSONPathTests;
-			productReference = 5018A18E192498F000B12E7A /* ACJSONPathTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5018A16B192498F000B12E7A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Albert Chu";
-				TargetAttributes = {
-					5018A18D192498F000B12E7A = {
-						TestTargetID = 5018A172192498F000B12E7A;
-					};
-				};
 			};
 			buildConfigurationList = 5018A16E192498F000B12E7A /* Build configuration list for PBXProject "ACJSONPath" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -264,7 +182,6 @@
 			projectRoot = "";
 			targets = (
 				5018A172192498F000B12E7A /* ACJSONPath */,
-				5018A18D192498F000B12E7A /* ACJSONPathTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,15 +193,8 @@
 			files = (
 				5018A181192498F000B12E7A /* InfoPlist.strings in Resources */,
 				5018A189192498F000B12E7A /* Images.xcassets in Resources */,
+				7A0AF8A21D80A1610067D6D1 /* Launch Screen.storyboard in Resources */,
 				5018A1B219249ADC00B12E7A /* test.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5018A18C192498F000B12E7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5018A19A192498F000B12E7A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +206,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5018A187192498F000B12E7A /* AppDelegate.m in Sources */,
-				5018A1B61924AA0800B12E7A /* UILabel+ACJSONPath.m in Sources */,
 				5018A1AC1924996200B12E7A /* ACJSONPath.m in Sources */,
 				5018A183192498F000B12E7A /* main.m in Sources */,
 				5018A1AD1924996200B12E7A /* ACJSONUtil.m in Sources */,
@@ -304,37 +213,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5018A18A192498F000B12E7A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5018A19C192498F000B12E7A /* ACJSONPathTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5018A194192498F000B12E7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5018A172192498F000B12E7A /* ACJSONPath */;
-			targetProxy = 5018A193192498F000B12E7A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5018A17F192498F000B12E7A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5018A180192498F000B12E7A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5018A198192498F000B12E7A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5018A199192498F000B12E7A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -360,6 +245,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -421,6 +307,7 @@
 				GCC_PREFIX_HEADER = "ACJSONPath/ACJSONPath-Prefix.pch";
 				INFOPLIST_FILE = "ACJSONPath/ACJSONPath-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertchu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -435,48 +322,9 @@
 				GCC_PREFIX_HEADER = "ACJSONPath/ACJSONPath-Prefix.pch";
 				INFOPLIST_FILE = "ACJSONPath/ACJSONPath-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertchu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		5018A1A3192498F000B12E7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ACJSONPath.app/ACJSONPath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ACJSONPath/ACJSONPath-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ACJSONPathTests/ACJSONPathTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		5018A1A4192498F000B12E7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ACJSONPath.app/ACJSONPath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ACJSONPath/ACJSONPath-Prefix.pch";
-				INFOPLIST_FILE = "ACJSONPathTests/ACJSONPathTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -499,14 +347,7 @@
 				5018A1A1192498F000B12E7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		5018A1A2192498F000B12E7A /* Build configuration list for PBXNativeTarget "ACJSONPathTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5018A1A3192498F000B12E7A /* Debug */,
-				5018A1A4192498F000B12E7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

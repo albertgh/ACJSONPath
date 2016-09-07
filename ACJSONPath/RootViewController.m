@@ -11,7 +11,6 @@
 #import "ACJSONUtil.h"
 
 #import "ACJSONPath.h"
-#import "UILabel+ACJSONPath.h"
 
 
 @interface RootViewController ()
@@ -25,20 +24,16 @@
 
 - (void)testButtonClicked:(UIButton *)sender
 {
-    //-- 发送请求 -----------------------------------------------------------------------------------
     NSURL *theURL = [NSURL URLWithString:@"http://www.battlenet.com.cn/api/wow/battlePet/species/258"];
-    
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:theURL
                                                                 cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                             timeoutInterval:10];
-    
     [request setHTTPMethod:@"GET"];
-    
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
      {
-         if (!error) /** 请求成功，处理返回结果 */
+         if (!error)
          {
              NSString *responseString = [[NSString alloc] initWithData:data
                                                               encoding:NSUTF8StringEncoding];
@@ -47,17 +42,18 @@
              id json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
              
              
-             // 更新 UI
-             [self.testLabel ac_setTextWithJSON:json andPath:@"abilities[0].name"];
+             NSString *testStr = [[ACJSONPath sharedInstance]
+                                  getDataFromJSONObject:json
+                                  byPath:@"abilities[0].name"];
+             
+             self.testLabel.text = testStr;
              
          }
          else
          {
              NSLog(@"error");
          }
-         
      }];
-    //----------------------------------------------------------------------------------------------
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -156,8 +152,7 @@
     
     
     
-    /*
-     
+    
     [[ACJSONUtil sharedInstance]
      parsingJSONDataFromMainBundleByFile:@"test.json"
      
@@ -173,9 +168,7 @@
      }
      
      ];
-     
-     **/
-    
+         
     
 }
 
