@@ -99,7 +99,13 @@
             // 只有 key, 不需要从数组下标取元素的分支
             else
             {
-                container = container[key];
+                if ([container isKindOfClass:[NSDictionary class]]) {
+                    container = container[key];
+                }
+                else
+                {
+                    return nil; //不存在的字典
+                }
             }
         }
         else
