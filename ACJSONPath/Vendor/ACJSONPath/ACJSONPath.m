@@ -24,6 +24,12 @@
 
 - (id)getDataFromJSONObject:(NSDictionary *)dictionary byPath:(NSString *)pathString
 {
+    if (!dictionary
+        || ![dictionary isKindOfClass:[NSDictionary class]])
+    {
+        return nil;
+    }
+    
     NSArray *keys = [pathString componentsSeparatedByString:@"."];
     
     /** 中间容器 */
