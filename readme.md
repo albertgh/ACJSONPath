@@ -5,20 +5,20 @@ An easy way to get data from JSON.
 
 ## Installing
 
-	Drag ACJSONPath folder into your project.
+	Drag ACObjectFromDictionaryPath folder into your project.
 
 ```objective-c
-#import "ACJSONPath.h"   
+#import "NSDictionary+ACObjectFromDictionaryPath.h"
 ```
 
 ## Usage
 
 ```objective-c
-NSString *testStr =
-[[ACJSONPath sharedInstance]
-getDataFromJSONObject:yourJSONObj
-               byPath:@"template.test[1][0].one[0][0].te"];
-
+NSString *string = [NSDictionary ac_objectFrom:yourJSONObj path:@"query.created"];
+             
+NSNumber *unexpectedClassTypeWillBeNil = [NSDictionary ac_objectFrom:json
+                                                                path:@"query.created"
+                                                                type:[NSNumber class]];
 ```
 
 

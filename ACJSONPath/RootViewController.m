@@ -8,9 +8,9 @@
 
 #import "RootViewController.h"
 
-#import "ACJSONUtil.h"
+#import "NSDictionary+ACObjectFromDictionaryPath.h"
 
-#import "ACJSONPath.h"
+#import "ACJSONUtil.h"
 
 
 @interface RootViewController ()
@@ -42,9 +42,13 @@
              id json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
              
              
-             NSString *testStr = [[ACJSONPath sharedInstance]
-                                  getDataFromJSONObject:json
-                                  byPath:@"query.created"];
+             NSString *testStr = [NSDictionary ac_objectFrom:json
+                                                        path:@"query.created"];
+
+             
+             NSNumber *unexpectedClassTypeWillBeNil = [NSDictionary ac_objectFrom:json
+                                                                             path:@"query.created"
+                                                                             type:[NSNumber class]];
              
              self.testLabel.text = testStr;
              

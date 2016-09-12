@@ -14,10 +14,10 @@
 		5018A183192498F000B12E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A182192498F000B12E7A /* main.m */; };
 		5018A187192498F000B12E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A186192498F000B12E7A /* AppDelegate.m */; };
 		5018A189192498F000B12E7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5018A188192498F000B12E7A /* Images.xcassets */; };
-		5018A1AC1924996200B12E7A /* ACJSONPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A1A81924996200B12E7A /* ACJSONPath.m */; };
 		5018A1AD1924996200B12E7A /* ACJSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A1AB1924996200B12E7A /* ACJSONUtil.m */; };
 		5018A1B0192499AB00B12E7A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5018A1AF192499AB00B12E7A /* RootViewController.m */; };
 		5018A1B219249ADC00B12E7A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 5018A1B119249ADC00B12E7A /* test.json */; };
+		50AA2B8F1D86B5BD00635CD8 /* NSDictionary+ACObjectFromDictionaryPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AA2B8E1D86B5BD00635CD8 /* NSDictionary+ACObjectFromDictionaryPath.m */; };
 		7A0AF8A21D80A1610067D6D1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AF8A11D80A1610067D6D1 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -34,13 +34,13 @@
 		5018A186192498F000B12E7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5018A188192498F000B12E7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5018A18F192498F000B12E7A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5018A1A71924996200B12E7A /* ACJSONPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACJSONPath.h; sourceTree = "<group>"; };
-		5018A1A81924996200B12E7A /* ACJSONPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACJSONPath.m; sourceTree = "<group>"; };
 		5018A1AA1924996200B12E7A /* ACJSONUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACJSONUtil.h; sourceTree = "<group>"; };
 		5018A1AB1924996200B12E7A /* ACJSONUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACJSONUtil.m; sourceTree = "<group>"; };
 		5018A1AE192499AB00B12E7A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		5018A1AF192499AB00B12E7A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		5018A1B119249ADC00B12E7A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		50AA2B8D1D86B5BD00635CD8 /* NSDictionary+ACObjectFromDictionaryPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ACObjectFromDictionaryPath.h"; sourceTree = "<group>"; };
+		50AA2B8E1D86B5BD00635CD8 /* NSDictionary+ACObjectFromDictionaryPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ACObjectFromDictionaryPath.m"; sourceTree = "<group>"; };
 		7A0AF8A11D80A1610067D6D1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,19 +116,10 @@
 		5018A1A51924996200B12E7A /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				5018A1A61924996200B12E7A /* ACJSONPath */,
+				50AA2B8C1D86B5A000635CD8 /* ACObjectFromDictionaryPath */,
 				5018A1A91924996200B12E7A /* ACJSONUtil */,
 			);
 			path = Vendor;
-			sourceTree = "<group>";
-		};
-		5018A1A61924996200B12E7A /* ACJSONPath */ = {
-			isa = PBXGroup;
-			children = (
-				5018A1A71924996200B12E7A /* ACJSONPath.h */,
-				5018A1A81924996200B12E7A /* ACJSONPath.m */,
-			);
-			path = ACJSONPath;
 			sourceTree = "<group>";
 		};
 		5018A1A91924996200B12E7A /* ACJSONUtil */ = {
@@ -138,6 +129,15 @@
 				5018A1AB1924996200B12E7A /* ACJSONUtil.m */,
 			);
 			path = ACJSONUtil;
+			sourceTree = "<group>";
+		};
+		50AA2B8C1D86B5A000635CD8 /* ACObjectFromDictionaryPath */ = {
+			isa = PBXGroup;
+			children = (
+				50AA2B8D1D86B5BD00635CD8 /* NSDictionary+ACObjectFromDictionaryPath.h */,
+				50AA2B8E1D86B5BD00635CD8 /* NSDictionary+ACObjectFromDictionaryPath.m */,
+			);
+			path = ACObjectFromDictionaryPath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5018A187192498F000B12E7A /* AppDelegate.m in Sources */,
-				5018A1AC1924996200B12E7A /* ACJSONPath.m in Sources */,
 				5018A183192498F000B12E7A /* main.m in Sources */,
 				5018A1AD1924996200B12E7A /* ACJSONUtil.m in Sources */,
+				50AA2B8F1D86B5BD00635CD8 /* NSDictionary+ACObjectFromDictionaryPath.m in Sources */,
 				5018A1B0192499AB00B12E7A /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
